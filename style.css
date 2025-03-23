@@ -422,6 +422,30 @@ h3{
     padding: 2px 10px;
     border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+    .skills-container {  
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .skill-box {
+        width: 100%; /* Full width on small screens */
+        text-align: center; /* Center text */
+        margin-bottom: 15px; /* Add space between skills */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-container {
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    .skill-box {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
 
 /* ----- PROJECTS BOX ----- */
 .project-container{
