@@ -410,33 +410,18 @@ h3{
 .skills-header{
     margin-bottom: 30px;
 }
-.skills-list {
+.skills-list{
     display: flex;
-    flex-wrap: wrap;  
-    justify-content: center; 
-    gap: 10px;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-.skills-list span {
+.skills-list span{
     font-size: 14px;
-    padding: 6px 12px;
-    background: var(--second-color);
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 2px 10px;
     border-radius: 5px;
-    white-space: nowrap; 
 }
-@media screen and (max-width: 480px) {
-    .skills-list {
-        flex-direction: row; /* ✅ Allows wrapping */
-        justify-content: center;
-    }
-
-    .skills-list span {
-        font-size: 12px;
-        padding: 5px 10px;
-        margin-bottom: 5px;
-    }
-}
-
 
 
 
