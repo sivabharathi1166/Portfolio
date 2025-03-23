@@ -423,28 +423,34 @@ h3{
     border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
-    .skills-container {  
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
+    .skills-box {
+        width: 100%; /* Make skills box full width */
+        text-align: center; /* Center align text */
+        margin-bottom: 15px; /* Add spacing */
     }
 
-    .skill-box {
-        width: 100%; /* Full width on small screens */
-        text-align: center; /* Center text */
-        margin-bottom: 15px; /* Add space between skills */
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center align items */
+        gap: 10px; /* Add spacing between skills */
+    }
+
+    .skills-list span {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px 12px; /* Adjust padding */
+        background: var(--second-color);
+        border-radius: 5px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .skills-container {
-        padding: 10px; /* Reduce padding for small screens */
-    }
-
-    .skill-box {
-        font-size: 14px; /* Adjust font size */
-        padding: 10px; /* Adjust padding */
+    .skills-list span {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        padding: 6px 10px;
     }
 }
+
 
 
 /* ----- PROJECTS BOX ----- */
