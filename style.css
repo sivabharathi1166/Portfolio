@@ -441,7 +441,7 @@ h3{
 
     .skills-list {
         display: flex;
-        flex-wrap: wrap;  /* ✅ Enables wrapping */
+        flex-wrap: wrap;  
         justify-content: center;
         gap: 8px;
     }
@@ -451,13 +451,13 @@ h3{
         padding: 6px 12px;
         background: var(--second-color);
         border-radius: 5px;
-        white-space: nowrap;  /* ✅ Prevents text breaking */
+        white-space: nowrap; 
     }
 }
 
 @media screen and (max-width: 480px) {
     .skills-box {
-        width: 100%;
+        width: 80%;
     }
 
     .skills-list {
