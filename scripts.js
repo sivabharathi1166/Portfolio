@@ -1,4 +1,3 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
 
@@ -8,8 +7,6 @@ function myMenuFunction(){
       menuBtn.className = "nav-menu";
     }
   }
-
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
   window.onscroll = function() {headerShadow()};
 
   function headerShadow() {
@@ -30,8 +27,6 @@ function myMenuFunction(){
     }
   }
 
-
-/* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
     strings : ["Fullstack Developer","python Developer","front-end Developer"],
     loop : true,
@@ -41,7 +36,7 @@ function myMenuFunction(){
  })
 
 
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+/* -----  SCROLL REVEAL ANIMATION ----- */
  const sr = ScrollReveal({
         origin: 'top',
         distance: '80px',
