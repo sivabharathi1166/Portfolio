@@ -374,58 +374,66 @@ h3{
 }
 
 /* ----- ABOUT INFO ----- */
-.about-info{
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-block: 30px 70px;
-    padding-inline: 20px;
-    width: 100%;
-    background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    border-radius: 20px;
-}
-.about-info p{
-    text-align: center;
-    font-size: 15px;
-    color: #777;
-}
-.about-btn button{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
-    border-radius: 30px;
-}
-.about-btn button:hover{
-    background: var(--first-color-hover);
-}
-
-/* ----- ABOUT / SKILLS BOX ----- */
-.skills-box{
-    margin: 10px;
-}
-.skills-header{
-    margin-bottom: 30px;
-}
-.skills-list{
+.row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
-.skills-list span{
-    font-size: 14px;
-    background: var(--first-color);
-    color: var(--color-white);
-    padding: 2px 10px;
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.skills-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+    flex: 1;
+}
+
+.skills-header h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list span {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
+    font-size: 14px;
 }
 
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .skills-box {
+        width: 90%;
+    }
+}
 
-
-
+@media screen and (max-width: 480px) {
+    .skills-box {
+        width: 100%;
+    }
+}
 
 
 /* ----- PROJECTS BOX ----- */
