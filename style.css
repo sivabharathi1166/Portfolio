@@ -457,7 +457,7 @@ h3{
 
 @media screen and (max-width: 480px) {
     .skills-box {
-        width: 80%;
+        width: 50%;
     }
 
     .skills-list {
