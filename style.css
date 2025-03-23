@@ -424,7 +424,8 @@ h3{
 }
 @media screen and (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stack sections vertically */
+        display: flex;
+        flex-direction: column; /* Stack sections */
         align-items: center;
     }
 
@@ -433,10 +434,9 @@ h3{
     }
 
     .skills-box {
-        width: 100%; /* Make each skill box take full width */
+        width: 90%; /* Adjust width for mobile */
+        margin-bottom: 15px; /* Add spacing */
         text-align: center;
-        padding: 15px;
-        box-sizing: border-box;
     }
 
     .skills-list {
@@ -455,9 +455,19 @@ h3{
 }
 
 @media screen and (max-width: 480px) {
+    .skills-box {
+        width: 100%;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .skills-list span {
         font-size: 12px;
         padding: 5px 10px;
+        margin-bottom: 5px;
     }
 }
 
